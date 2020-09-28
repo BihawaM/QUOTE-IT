@@ -1,23 +1,23 @@
-// import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Directive, ElementRef, HostListener } from '@angular/core';
 
-// @Directive({
-//   selector: '[appStrikethrough]'
-// })
-// export class StrikethroughDirective {
+@Directive({
+  selector: '[appStrikethrough]'
+})
+export class StrikethroughDirective {
 
-//   constructor(private elem:ElementRef){}
+  constructor(private elem:ElementRef){}
 
-//   @HostListener("click") onClicks(){
-//     this.textDeco("line-through")
-//   }
+  @HostListener("click") onClicks(){
+    this.textDeco("line-through")
+  }
 
-//   @HostListener("dblclick") onDoubleClicks(){
-//     this.textDeco("None")
-//   }
+  @HostListener("dblclick") onDoubleClicks(){
+    this.textDeco("None")
+  }
 
-//   private textDeco(action:string){
-//     this.elem.nativeElement.style.textDecoration=action;
+  private textDeco(action:string){
+    this.elem.nativeElement.style.textDecoration=action;
 
-//   }
+  }
 
-// }
+}
