@@ -1,0 +1,37 @@
+<div class="container"  >
+ <h1>QUOTE IT</h1>
+
+ <div class="quote" >
+  <div class="row">
+    
+      <div class="col-md-12">
+          <br> 
+        <div class="row">
+            <br>
+        <div *ngFor='let quote of quote; let i = index' class="card col-md-6" style="width: 18rem;">
+        
+          <ul class="list-group list-group-flush">
+            <li appStrikeThrough>{{quote.name | uppercase}}</li>
+            <br>
+            <li>Published On {{quote.completeDate|date|uppercase}}</li>
+            <br>
+            <button (click)='toggleDetails(i)' class="btn btn-primary">Show</button>
+            <br>
+            <app-quote-detail *ngIf="quote.showQuote" [quote]='quote' (isComplete)='deleteQuote($event,i)'>
+            </app-quote-detail>
+          </ul> 
+
+          <!-- <div class="card-footer">
+            
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+
+    </div>
+  </div>
+ </div>
+</div> 
