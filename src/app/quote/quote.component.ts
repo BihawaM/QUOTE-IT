@@ -17,6 +17,13 @@ export class QuoteComponent implements OnInit {
     new Quote('Dalai Lama',"Happiness mainly comes from our own attitude, rather than from external factors.", new Date(2020,9,28)),
   ];
 
+  like(index) {
+    this.quote[index].like++;
+  }
+  dislike(index) {
+    this.quote[index].dislike++;
+  }
+
   toggleDetails(index){
     this.quote[index].showQuote =!this.quote[index].showQuote;
   }

@@ -1,29 +1,41 @@
-# QUOTEIT
+# QUOTE-IT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+## AUTHOR
+### [Bihawa](https://github.com/BihawaM)
 
-This project was designed with [Figma](https://www.figma.com/file/vXxyy82lI9vR6M8wPb7bBt/Untitled?node-id=0%3A1).
+### [Figma](https://www.figma.com/file/vXxyy82lI9vR6M8wPb7bBt/QUOTE-IT?node-id=0%3A1)
 
-## Development server
+## Description
+  This is a website that uses angular to read quotes and add quotes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## BDD
+> Click show to read quote.
 
-## Code scaffolding
+> Click delete to remove quote.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Click thumbs up to like a quote.
 
-## Build
+> Click thumbs down to dislike a quote.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+> Enter name if wanting to create a quote.
 
-## Running unit tests
+> Enter a quote of your choice.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> Click on the publish button to add quote.
 
-## Running end-to-end tests
+ NB// Dont leave any field empty
+ 
+ EXAMPLE
+ 
+ > Bihawa
+ 
+ > Success is not for the chosen few but for the few who have chosen it,
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Technologies used
+  > `` html``
+  > `` Css ``
+  > `` Typescript ``
+  > `` Js ``
+ 
+## License
+[MIT](https://github.com/BihawaM/QUOTE-IT/blob/master/LICENSE.md)

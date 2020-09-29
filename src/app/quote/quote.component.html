@@ -21,9 +21,11 @@
             </app-quote-detail>
           </ul> 
 
-          <!-- <div class="card-footer">
-            
-          </div> -->
+          <div class="card-footer">
+            <button (click)="like(i)">Like {{ quote.like}}</button>
+            <br>
+            <button (click)="dislike(i)">Dislike {{ quote.dislike}}</button>
+          </div>
         </div>
       </div>
 
